@@ -15,7 +15,8 @@
 			<class name="contacttest.CreateContactTest" />
 		</classes>
 	</test> <!--
-	Test -->
+	Test --> 
 </suite> <!--
 Suite -->
+<!-- This is a single-line comment -->
  
