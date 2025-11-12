@@ -46,11 +46,11 @@ public class BaseClass {
 		System.out.println("Pre-Conditions for parallel executions");
 	}
 	
-	@Parameters("BROWSER")
+//	@Parameters("BROWSER")
 	@BeforeClass(groups = {"smoke","regression"})
-		public void beforeClass(String browser) throws IOException {
-		String BROWSER = browser;
-//		String BROWSER = pLib.readDataFromPropertiesFile("Browser");
+		public void beforeClass() throws IOException {
+//		String BROWSER = browser;
+		String BROWSER = pLib.readDataFromPropertiesFile("Browser");
 		
 		ChromeOptions settings = new ChromeOptions();
 		Map<String, Object> prefs = new HashMap<>();
