@@ -50,8 +50,8 @@ public class CreateCampaignTest extends BaseClass{
 		HomePage homePage = new HomePage(driver);
 		WebElement toastMsg = homePage.getToastMsg();
 		wLib.waitUntilElementToBeVisible(driver, toastMsg);
-		homePage.getCloseToastMsg().click();
 		Assert.assertTrue(toastMsg.getText().contains(TOAST_MSG_VERIFICATION));
+		homePage.getCloseToastMsg().click();		
 	}
 	
 	@Test

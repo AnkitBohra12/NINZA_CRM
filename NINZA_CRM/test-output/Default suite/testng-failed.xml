@@ -5,8 +5,8 @@
     <classes>
       <class name="producttest.CreateProductTest">
         <methods>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>

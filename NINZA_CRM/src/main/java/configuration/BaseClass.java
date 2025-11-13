@@ -78,13 +78,13 @@ public class BaseClass {
 	@BeforeMethod(groups = {"smoke","regression"})
 		public void beforeMethod() throws IOException {
 		System.out.println("Login");
-//		String URL = pLib.readDataFromPropertiesFile("URL");
-//		String USERNAME = pLib.readDataFromPropertiesFile("Username");
-//		String PASSWORD = pLib.readDataFromPropertiesFile("Password");
+		String URL = pLib.readDataFromPropertiesFile("URL");
+		String USERNAME = pLib.readDataFromPropertiesFile("Username");
+		String PASSWORD = pLib.readDataFromPropertiesFile("Password");
 		
-		String URL = System.getProperty("url");
-		String USERNAME = System.getProperty("username");
-		String PASSWORD = System.getProperty("password");
+//		String URL = System.getProperty("url");
+//		String USERNAME = System.getProperty("username");
+//		String PASSWORD = System.getProperty("password");
 		
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.loginToApp(URL, USERNAME, PASSWORD);

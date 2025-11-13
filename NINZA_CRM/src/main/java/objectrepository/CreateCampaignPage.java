@@ -15,7 +15,8 @@ public class CreateCampaignPage {
 		PageFactory.initElements(driver, this);
 	}
 //	AutoHealing
-	@FindAll({@FindBy(id="name"), @FindBy(name = "campaignName")})
+//	@FindAll({@FindBy(id="name"), @FindBy(name = "campaignName")})
+	@FindBy(name = "campaignName")
 	private WebElement campaignNameTF;
 	
 	@FindBy(name = "targetSize")
